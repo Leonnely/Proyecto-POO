@@ -1,4 +1,5 @@
-﻿using Proyecto_Integrador.Formularios;
+﻿using Proyecto_Integrador.Clases;
+using Proyecto_Integrador.Formularios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,6 +32,26 @@ namespace Proyecto_Integrador
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             ShowInterfazUser(new frmUsuario());
+        }
+
+        private void Empleados_Click(object sender, EventArgs e)
+        {
+            ShowInterfazUser(new frmEmpleados());
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnAcercaDe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProyectos_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

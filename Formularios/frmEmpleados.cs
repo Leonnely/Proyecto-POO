@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proyecto_Integrador.Clases;
 
 namespace Proyecto_Integrador.Formularios
 {
@@ -15,6 +16,18 @@ namespace Proyecto_Integrador.Formularios
         public frmEmpleados()
         {
             InitializeComponent();
+        }
+
+        private void btnAgregarEmpleado_Click(object sender, EventArgs e)
+        {
+            frmAddEmp frmEmp = new frmAddEmp();
+            frmEmp.ShowDialog();
+            
+        }
+
+        private void frmEmpleados_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = zDatos.getEmpleados();
         }
     }
 }

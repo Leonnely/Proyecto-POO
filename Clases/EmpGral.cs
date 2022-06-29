@@ -8,8 +8,13 @@ namespace Proyecto_Integrador.Clases
 {
     class EmpGral : Persona
     {
-        public EmpGral(string Nombre, string Apellido) :base(Nombre,Apellido)
+        /// <summary>
+        /// CONSTRUCTOR PARA FUNCIONAMIENTO DE PRUEBA
+        /// **** ESTADO INCOMPLETO ****
+        /// </summary>
+        public EmpGral(string Nombre, string Apellido,string CodEmp) :base(Nombre,Apellido)
         {
+            this.CodEmp = CodEmp;
             this.Nombre = Nombre;
             this.Apellido = Apellido;
         }

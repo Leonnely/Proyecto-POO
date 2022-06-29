@@ -51,6 +51,13 @@
     <Compile Include="Clases\EmpGral.cs" />
     <Compile Include="Clases\Persona.cs" />
     <Compile Include="Clases\Proyectos.cs" />
+    <Compile Include="Clases\zDatos.cs" />
+    <Compile Include="Formularios\frmAddEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAddEmp.Designer.cs">
+      <DependentUpon>frmAddEmp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmEmpleados.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -71,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\frmAddEmp.resx">
+      <DependentUpon>frmAddEmp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmEmpleados.resx">
       <DependentUpon>frmEmpleados.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +101,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include=".editorconfig" />
+    <None Include="Properties\DataSources\Proyecto_Integrador.Clases.EmpGral.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

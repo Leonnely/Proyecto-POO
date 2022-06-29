@@ -139,7 +139,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.cboxEstado);
-            this.groupBox1.Location = new System.Drawing.Point(110, 91);
+            this.groupBox1.Location = new System.Drawing.Point(115, 69);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(162, 322);
             this.groupBox1.TabIndex = 11;
@@ -176,7 +176,7 @@
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtNombreProyecto);
-            this.groupBox2.Location = new System.Drawing.Point(303, 91);
+            this.groupBox2.Location = new System.Drawing.Point(308, 69);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(434, 322);
             this.groupBox2.TabIndex = 12;
@@ -285,7 +285,7 @@
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(632, 435);
+            this.btnConfirmar.Location = new System.Drawing.Point(637, 413);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(105, 23);
             this.btnConfirmar.TabIndex = 13;
