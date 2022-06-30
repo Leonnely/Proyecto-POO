@@ -45,7 +45,7 @@ namespace Proyecto_Integrador
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1189, 89);
+            this.panel1.Size = new System.Drawing.Size(972, 89);
             this.panel1.TabIndex = 3;
             // 
             // panel4
@@ -58,7 +58,7 @@ namespace Proyecto_Integrador
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 89);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(168, 532);
+            this.panel4.Size = new System.Drawing.Size(168, 515);
             this.panel4.TabIndex = 4;
             // 
             // btnAcercaDe
@@ -147,14 +147,14 @@ namespace Proyecto_Integrador
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(168, 89);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1021, 532);
+            this.panelContenedor.Size = new System.Drawing.Size(804, 515);
             this.panelContenedor.TabIndex = 5;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1189, 621);
+            this.ClientSize = new System.Drawing.Size(972, 604);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);

@@ -48,7 +48,6 @@ namespace Proyecto_Integrador.Formularios
             // Hacer un condicional donde se validen los datos y si todo es correcto se ejecute el siguiente codigo
             if (File.Exists("DatosClientes.txt"))
             {
-
                 FileStream fs = new FileStream("DatosClientes.txt", FileMode.Open);
 
                 StreamReader sr = new StreamReader(fs);
@@ -61,9 +60,6 @@ namespace Proyecto_Integrador.Formularios
                     datas2 = sr.ReadLine();
                     string[] datos2 = datas2.Split('-');
                     sw.WriteLine(datos2[0] + "-" + datos2[1] + "-" + datos2[2] + "-" + datos2[3] + "-" + datos2[4] + "-" + datos2[5]);
-
-
-
                 }
                 string Datoscliente = txtNombre.Text + "-" + txtApellido.Text + "-" + txtDNI.Text + "-" + cboxEstado.Text + "-" + cboxRelacion.Text + "-" + txtCodPr.Text;
                 sw.WriteLine(Datoscliente);
