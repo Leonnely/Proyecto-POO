@@ -8,14 +8,23 @@ namespace Proyecto_Integrador.Clases
 {
     class Cliente : Persona
     {
-        public Cliente(string Nombre,string Apellido,string Estado,string Relacion) : base(Nombre,Apellido)
+        public Cliente(string Nombre,string Apellido,string dni,string Estado,string Relacion) : base(Nombre,Apellido)
         {
               this.Nombre = Nombre;
               this.Apellido = Apellido;
+              this.DNI = dni;
               this.Estado = Estado;
               this.Relacion = Relacion;
         }
-        
+
+        private string dni;
+
+        public string DNI
+        {
+            get { return dni; }
+            set { dni = value; }
+        }
+
         //nuevo /frecuente 
         private string estado;
         public string Estado
@@ -30,5 +39,12 @@ namespace Proyecto_Integrador.Clases
             get { return relacion; }
             set { relacion = value; }
         }
+        private Proyectos proyect;
+        public Proyectos Proyect
+        {
+            get { return proyect; }
+            set { proyect = value; }
+        }
+
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_Integrador.Formularios
 {
-    partial class frmUsuario
+    partial class IfrmUsuario
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -41,7 +41,7 @@
             this.txtDNI = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtCosto = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -53,6 +53,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtNombreProyecto = new System.Windows.Forms.TextBox();
             this.btnConfirmar = new System.Windows.Forms.Button();
+            this.txtLenguaje = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -139,7 +141,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.cboxEstado);
-            this.groupBox1.Location = new System.Drawing.Point(115, 69);
+            this.groupBox1.Location = new System.Drawing.Point(99, 69);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(162, 322);
             this.groupBox1.TabIndex = 11;
@@ -164,8 +166,10 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.txtLenguaje);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.txtDescripcion);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.txtCosto);
             this.groupBox2.Controls.Add(this.label8);
@@ -192,13 +196,13 @@
             this.label11.TabIndex = 11;
             this.label11.Text = "Descripcion Breve";
             // 
-            // textBox4
+            // txtDescripcion
             // 
-            this.textBox4.Location = new System.Drawing.Point(48, 98);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(160, 182);
-            this.textBox4.TabIndex = 10;
+            this.txtDescripcion.Location = new System.Drawing.Point(48, 98);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(160, 182);
+            this.txtDescripcion.TabIndex = 10;
             // 
             // label10
             // 
@@ -232,28 +236,30 @@
             this.dtEntrega.Name = "dtEntrega";
             this.dtEntrega.Size = new System.Drawing.Size(135, 20);
             this.dtEntrega.TabIndex = 6;
-            this.dtEntrega.Value = new System.DateTime(2022, 6, 24, 0, 0, 0, 0);
+            this.dtEntrega.Value = new System.DateTime(2022, 6, 30, 0, 0, 0, 0);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(251, 136);
+            this.label7.Location = new System.Drawing.Point(251, 135);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(95, 13);
             this.label7.TabIndex = 5;
             this.label7.Text = "Fecha Suscripcion";
+            this.label7.Visible = false;
             // 
             // dtSuscripcion
             // 
             this.dtSuscripcion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtSuscripcion.Location = new System.Drawing.Point(254, 152);
+            this.dtSuscripcion.Location = new System.Drawing.Point(254, 151);
             this.dtSuscripcion.Name = "dtSuscripcion";
             this.dtSuscripcion.Size = new System.Drawing.Size(135, 20);
             this.dtSuscripcion.TabIndex = 4;
+            this.dtSuscripcion.Value = new System.DateTime(2022, 6, 30, 8, 42, 38, 0);
             // 
             // txtCodPr
             // 
-            this.txtCodPr.Location = new System.Drawing.Point(254, 98);
+            this.txtCodPr.Location = new System.Drawing.Point(254, 45);
             this.txtCodPr.Name = "txtCodPr";
             this.txtCodPr.Size = new System.Drawing.Size(135, 20);
             this.txtCodPr.TabIndex = 3;
@@ -261,7 +267,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(251, 82);
+            this.label6.Location = new System.Drawing.Point(251, 29);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 13);
             this.label6.TabIndex = 2;
@@ -293,15 +299,32 @@
             this.btnConfirmar.UseVisualStyleBackColor = true;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
-            // frmUsuario
+            // txtLenguaje
+            // 
+            this.txtLenguaje.Location = new System.Drawing.Point(254, 98);
+            this.txtLenguaje.Name = "txtLenguaje";
+            this.txtLenguaje.Size = new System.Drawing.Size(135, 20);
+            this.txtLenguaje.TabIndex = 12;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(251, 82);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(134, 13);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Lenguaje de Programacion";
+            // 
+            // IfrmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "frmUsuario";
+            this.Name = "IfrmUsuario";
             this.Size = new System.Drawing.Size(839, 494);
+            this.Load += new System.EventHandler(this.IfrmUsuario_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -333,9 +356,11 @@
         private System.Windows.Forms.TextBox txtCodPr;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtCosto;
         private System.Windows.Forms.Button btnConfirmar;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtLenguaje;
     }
 }

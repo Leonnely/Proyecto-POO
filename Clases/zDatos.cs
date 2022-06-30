@@ -14,5 +14,19 @@ namespace Proyecto_Integrador.Clases
             List<EmpGral> lista = Empleados.ToList();
             return lista;
         }
+
+        static public LinkedList<Cliente> Clientes = new LinkedList<Cliente>();
+        static public List<Cliente> getClientes()
+        {
+            List<Cliente> lista = Clientes.ToList();
+            return lista;
+        }
+
+        static public LinkedList<Proyectos> Proyectos = new LinkedList<Proyectos>();
+        static public List<Proyectos> getProyectos()
+        {
+            List<Proyectos> lista = Proyectos.ToList();
+            return lista;
+        }
     }
 }

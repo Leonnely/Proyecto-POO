@@ -14,9 +14,9 @@ using FileHelpers;
 namespace Proyecto_Integrador.Formularios
 {
     [DelimitedRecord(";")]
-    public partial class frmEmpleados : UserControl
+    public partial class IfrmEmpleados : UserControl
     {
-        public frmEmpleados()
+        public IfrmEmpleados()
         {
             InitializeComponent();
         }

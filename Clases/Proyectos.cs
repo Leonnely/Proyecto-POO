@@ -8,7 +8,13 @@ namespace Proyecto_Integrador.Clases
 {
     class Proyectos
     {
-        public Proyectos(string nombreProyecto,string codeProyecto,DateTime fechaSuscripcion,string costo, DateTime fechaEntrega,string lenguajePr)
+        public Proyectos(string codeProyecto,string nombreProyecto)
+        {
+            this.CodeProyect = codeProyecto;
+            this.Nombre = nombreProyecto;
+        }
+        
+        public Proyectos(string nombreProyecto,string codeProyecto,string fechaSuscripcion,string costo, string fechaEntrega,string lenguajePr)
         {
             this.Nombre = nombreProyecto;
             this.CodeProyect = codeProyecto;
@@ -17,7 +23,7 @@ namespace Proyecto_Integrador.Clases
             this.FechaEntrega = fechaEntrega;
             this.LangProgram = lenguajePr;
         }
-
+        
         private string nombre;
         public string Nombre
         {
@@ -32,8 +38,8 @@ namespace Proyecto_Integrador.Clases
             set { codeProyect = value; }
         }
 
-        private DateTime fechaSuscripcion;
-        public DateTime FechaSuscripcion
+        private string fechaSuscripcion;
+        public string FechaSuscripcion
         {
             get { return fechaSuscripcion; }
             set { fechaSuscripcion = value; }
@@ -48,8 +54,8 @@ namespace Proyecto_Integrador.Clases
         }
 
 
-        private DateTime fechaEntrega;
-        public DateTime FechaEntrega
+        private string fechaEntrega;
+        public string FechaEntrega
         {
             get { return fechaEntrega; }
             set { fechaEntrega = value; }

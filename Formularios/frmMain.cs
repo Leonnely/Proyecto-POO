@@ -18,7 +18,6 @@ namespace Proyecto_Integrador
         {
             InitializeComponent();
         }
-
         private void ShowInterfazUser(UserControl varControl)
         {
             if (panelContenedor.Controls.Count > 0)
@@ -28,30 +27,27 @@ namespace Proyecto_Integrador
             this.panelContenedor.Tag = varControl;
             varControl.Show();
         }
-
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            ShowInterfazUser(new frmUsuario());
+            ShowInterfazUser(new IfrmUsuario());
         }
-
         private void Empleados_Click(object sender, EventArgs e)
         {
-            ShowInterfazUser(new frmEmpleados());
+            ShowInterfazUser(new IfrmEmpleados());
         }
-
+        private void btnProyectos_Click(object sender, EventArgs e)
+        {
+            ShowInterfazUser(new IfrmProyectos());
+        }
+        private void btnAcercaDe_Click(object sender, EventArgs e)
+        {
+            ShowInterfazUser(new IfrmAcercaDe());
+        }
         private void frmMain_Load(object sender, EventArgs e)
         {
             
         }
 
-        private void btnAcercaDe_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void btnProyectos_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

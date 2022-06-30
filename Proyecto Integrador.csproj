@@ -55,11 +55,17 @@
     <Compile Include="Clases\Persona.cs" />
     <Compile Include="Clases\Proyectos.cs" />
     <Compile Include="Clases\zDatos.cs" />
-    <Compile Include="Formularios\frmEmpleados.cs">
+    <Compile Include="Formularios\IfrmAcercaDe.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\frmEmpleados.Designer.cs">
-      <DependentUpon>frmEmpleados.cs</DependentUpon>
+    <Compile Include="Formularios\IfrmAcercaDe.Designer.cs">
+      <DependentUpon>IfrmAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IfrmEmpleados.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\IfrmEmpleados.Designer.cs">
+      <DependentUpon>IfrmEmpleados.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmMain.cs">
       <SubType>Form</SubType>
@@ -67,22 +73,34 @@
     <Compile Include="Formularios\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmUsuario.cs">
+    <Compile Include="Formularios\IfrmProyectos.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Formularios\frmUsuario.Designer.cs">
-      <DependentUpon>frmUsuario.cs</DependentUpon>
+    <Compile Include="Formularios\IfrmProyectos.Designer.cs">
+      <DependentUpon>IfrmProyectos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IfrmUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\IfrmUsuario.Designer.cs">
+      <DependentUpon>IfrmUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\frmEmpleados.resx">
-      <DependentUpon>frmEmpleados.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\IfrmAcercaDe.resx">
+      <DependentUpon>IfrmAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IfrmEmpleados.resx">
+      <DependentUpon>IfrmEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmUsuario.resx">
-      <DependentUpon>frmUsuario.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\IfrmProyectos.resx">
+      <DependentUpon>IfrmProyectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IfrmUsuario.resx">
+      <DependentUpon>IfrmUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
