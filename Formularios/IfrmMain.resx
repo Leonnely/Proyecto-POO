@@ -117,13 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>dignissim lectus id sem porttitor, quis vulputate ipsum tristique. Praesent tincidunt pulvinar justo sed tempus. 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse ligula ligula
-, tincidunt sit amet mauris ut, consequat dapibus neque. Maecenas in est erat. Nulla facilisi. Aenean dapibus
- est risus, eget porta sapien bibendum pharetra. Morbi lectus dolor, eleifend eu posuere non, pretium cursus diam
-. Integer a aliquam neque. Nam eget nisi sit amet ante porttitor dictum vel non libero. Cras a scelerisque risus, vita
-e consectetur leo. Nunc vehicula molestie ligula id vestibulum. Nulla id enim id turpis varius condimentum. Ut id 
-est quis turpis faucibus luctus sed non odio. Nam nec semper libero.</value>
-  </data>
 </root>

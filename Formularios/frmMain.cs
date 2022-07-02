@@ -17,6 +17,7 @@ namespace Proyecto_Integrador
         public frmMain()
         {
             InitializeComponent();
+            ShowInterfazUser(new IfrmMain());
         }
         private void ShowInterfazUser(UserControl varControl)
         {
@@ -26,6 +27,11 @@ namespace Proyecto_Integrador
             this.panelContenedor.Controls.Add(varControl);
             this.panelContenedor.Tag = varControl;
             varControl.Show();
+        }
+        
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            ShowInterfazUser(new IfrmMain());
         }
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
@@ -39,15 +45,15 @@ namespace Proyecto_Integrador
         {
             ShowInterfazUser(new IfrmProyectos());
         }
-        private void btnAcercaDe_Click(object sender, EventArgs e)
+        private void btnSalir_Click(object sender, EventArgs e)
         {
-            ShowInterfazUser(new IfrmAcercaDe());
+            DialogResult r = MessageBox.Show("Cerrar Programa?", "Cerrar Programa", MessageBoxButtons.YesNo);
+            if (r == DialogResult.Yes) this.Close();
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
             
         }
-
 
     }
 }

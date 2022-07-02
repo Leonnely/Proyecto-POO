@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Integrador.Formularios
 {
-    public partial class IfrmAcercaDe : UserControl
+    public partial class IfrmMain : UserControl
     {
-        public IfrmAcercaDe()
+        public IfrmMain()
         {
             InitializeComponent();
         }

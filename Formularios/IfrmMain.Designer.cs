@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_Integrador.Formularios
 {
-    partial class IfrmAcercaDe
+    partial class IfrmMain
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IfrmAcercaDe));
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(133, 210);
+            this.label1.Font = new System.Drawing.Font("Britannic Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(244, 201);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(537, 91);
-            this.label1.TabIndex = 0;
-            this.label1.Text = resources.GetString("label1.Text");
+            this.label1.Size = new System.Drawing.Size(339, 71);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Bienvenido";
             // 
-            // IfrmAcercaDe
+            // IfrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Name = "IfrmAcercaDe";
-            this.Size = new System.Drawing.Size(799, 509);
+            this.Name = "IfrmMain";
+            this.Size = new System.Drawing.Size(820, 507);
             this.ResumeLayout(false);
             this.PerformLayout();
 

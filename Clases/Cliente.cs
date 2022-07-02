@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +19,6 @@ namespace Proyecto_Integrador.Clases
         }
 
         private string dni;
-
         public string DNI
         {
             get { return dni; }
@@ -39,6 +39,7 @@ namespace Proyecto_Integrador.Clases
             get { return relacion; }
             set { relacion = value; }
         }
+
         private Proyectos proyect;
         public Proyectos Proyect
         {

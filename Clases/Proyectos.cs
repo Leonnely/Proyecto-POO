@@ -61,12 +61,22 @@ namespace Proyecto_Integrador.Clases
             set { fechaEntrega = value; }
         }
 
+        private string descripcion;
+        public string Descripcion
+        {
+            get { return descripcion; }
+            set { descripcion = value; }
+        }
+
+
         private string langProgram;
         public string LangProgram
         {
             get { return langProgram; }
             set { langProgram = value; }
         }
+
+        
 
     }
 }

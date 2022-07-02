@@ -31,10 +31,11 @@ namespace Proyecto_Integrador
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnAcercaDe = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.btnProyectos = new System.Windows.Forms.Button();
             this.Empleados = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -45,41 +46,42 @@ namespace Proyecto_Integrador
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(972, 89);
+            this.panel1.Size = new System.Drawing.Size(972, 41);
             this.panel1.TabIndex = 3;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(24)))), ((int)(((byte)(33)))));
-            this.panel4.Controls.Add(this.btnAcercaDe);
+            this.panel4.Controls.Add(this.btnSalir);
             this.panel4.Controls.Add(this.btnProyectos);
             this.panel4.Controls.Add(this.Empleados);
             this.panel4.Controls.Add(this.btnRegistrar);
+            this.panel4.Controls.Add(this.btnHome);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(0, 89);
+            this.panel4.Location = new System.Drawing.Point(0, 41);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(168, 515);
+            this.panel4.Size = new System.Drawing.Size(150, 563);
             this.panel4.TabIndex = 4;
             // 
-            // btnAcercaDe
+            // btnSalir
             // 
-            this.btnAcercaDe.BackColor = System.Drawing.Color.Transparent;
-            this.btnAcercaDe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAcercaDe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAcercaDe.FlatAppearance.BorderSize = 0;
-            this.btnAcercaDe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(126)))), ((int)(((byte)(173)))));
-            this.btnAcercaDe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
-            this.btnAcercaDe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAcercaDe.Font = new System.Drawing.Font("HoloLens MDL2 Assets", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcercaDe.ForeColor = System.Drawing.Color.White;
-            this.btnAcercaDe.Location = new System.Drawing.Point(0, 210);
-            this.btnAcercaDe.Name = "btnAcercaDe";
-            this.btnAcercaDe.Size = new System.Drawing.Size(168, 70);
-            this.btnAcercaDe.TabIndex = 3;
-            this.btnAcercaDe.Text = "Acerca de";
-            this.btnAcercaDe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAcercaDe.UseVisualStyleBackColor = false;
-            this.btnAcercaDe.Click += new System.EventHandler(this.btnAcercaDe_Click);
+            this.btnSalir.BackColor = System.Drawing.Color.Transparent;
+            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalir.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnSalir.FlatAppearance.BorderSize = 0;
+            this.btnSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(181)))), ((int)(((byte)(250)))));
+            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(126)))), ((int)(((byte)(173)))));
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("HoloLens MDL2 Assets", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.White;
+            this.btnSalir.Location = new System.Drawing.Point(0, 493);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(150, 70);
+            this.btnSalir.TabIndex = 4;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnProyectos
             // 
@@ -87,14 +89,14 @@ namespace Proyecto_Integrador
             this.btnProyectos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnProyectos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProyectos.FlatAppearance.BorderSize = 0;
-            this.btnProyectos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(126)))), ((int)(((byte)(173)))));
-            this.btnProyectos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
+            this.btnProyectos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(181)))), ((int)(((byte)(250)))));
+            this.btnProyectos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(126)))), ((int)(((byte)(173)))));
             this.btnProyectos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProyectos.Font = new System.Drawing.Font("HoloLens MDL2 Assets", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProyectos.ForeColor = System.Drawing.Color.White;
-            this.btnProyectos.Location = new System.Drawing.Point(0, 140);
+            this.btnProyectos.Location = new System.Drawing.Point(0, 210);
             this.btnProyectos.Name = "btnProyectos";
-            this.btnProyectos.Size = new System.Drawing.Size(168, 70);
+            this.btnProyectos.Size = new System.Drawing.Size(150, 70);
             this.btnProyectos.TabIndex = 2;
             this.btnProyectos.Text = "Proyectos";
             this.btnProyectos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -107,14 +109,14 @@ namespace Proyecto_Integrador
             this.Empleados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Empleados.Dock = System.Windows.Forms.DockStyle.Top;
             this.Empleados.FlatAppearance.BorderSize = 0;
-            this.Empleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(126)))), ((int)(((byte)(173)))));
-            this.Empleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
+            this.Empleados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(181)))), ((int)(((byte)(250)))));
+            this.Empleados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(126)))), ((int)(((byte)(173)))));
             this.Empleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Empleados.Font = new System.Drawing.Font("HoloLens MDL2 Assets", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Empleados.ForeColor = System.Drawing.Color.White;
-            this.Empleados.Location = new System.Drawing.Point(0, 70);
+            this.Empleados.Location = new System.Drawing.Point(0, 140);
             this.Empleados.Name = "Empleados";
-            this.Empleados.Size = new System.Drawing.Size(168, 70);
+            this.Empleados.Size = new System.Drawing.Size(150, 70);
             this.Empleados.TabIndex = 1;
             this.Empleados.Text = "Empleados";
             this.Empleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -127,27 +129,47 @@ namespace Proyecto_Integrador
             this.btnRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistrar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRegistrar.FlatAppearance.BorderSize = 0;
-            this.btnRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(126)))), ((int)(((byte)(173)))));
-            this.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(80)))), ((int)(((byte)(110)))));
+            this.btnRegistrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(181)))), ((int)(((byte)(250)))));
+            this.btnRegistrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(126)))), ((int)(((byte)(173)))));
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("HoloLens MDL2 Assets", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrar.Location = new System.Drawing.Point(0, 0);
+            this.btnRegistrar.Location = new System.Drawing.Point(0, 70);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(168, 70);
+            this.btnRegistrar.Size = new System.Drawing.Size(150, 70);
             this.btnRegistrar.TabIndex = 0;
             this.btnRegistrar.Text = "Registrar Servicio";
             this.btnRegistrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(181)))), ((int)(((byte)(250)))));
+            this.btnHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(126)))), ((int)(((byte)(173)))));
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("HoloLens MDL2 Assets", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Location = new System.Drawing.Point(0, 0);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(150, 70);
+            this.btnHome.TabIndex = 3;
+            this.btnHome.Text = "Inicio";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(126)))), ((int)(((byte)(173)))));
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(168, 89);
+            this.panelContenedor.Location = new System.Drawing.Point(150, 41);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(804, 515);
+            this.panelContenedor.Size = new System.Drawing.Size(822, 563);
             this.panelContenedor.TabIndex = 5;
             // 
             // frmMain
@@ -173,7 +195,8 @@ namespace Proyecto_Integrador
         private System.Windows.Forms.Panel panelContenedor;
         private System.Windows.Forms.Button btnProyectos;
         private System.Windows.Forms.Button Empleados;
-        private System.Windows.Forms.Button btnAcercaDe;
+        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
 

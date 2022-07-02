@@ -32,14 +32,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cboxEstado = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.cboxRelacion = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtDNI = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cboxLenguaje = new System.Windows.Forms.ComboBox();
+            this.txtFechaInicio = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -47,14 +48,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.dtEntrega = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.dtSuscripcion = new System.Windows.Forms.DateTimePicker();
             this.txtCodPr = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNombreProyecto = new System.Windows.Forms.TextBox();
             this.btnConfirmar = new System.Windows.Forms.Button();
-            this.txtLenguaje = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.cboxEstado = new System.Windows.Forms.ComboBox();
+            this.cboxRelacion = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -91,16 +91,6 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Apellido";
             // 
-            // cboxEstado
-            // 
-            this.cboxEstado.FormattingEnabled = true;
-            this.cboxEstado.Items.AddRange(new object[] {
-            "hola"});
-            this.cboxEstado.Location = new System.Drawing.Point(28, 204);
-            this.cboxEstado.Name = "cboxEstado";
-            this.cboxEstado.Size = new System.Drawing.Size(100, 21);
-            this.cboxEstado.TabIndex = 7;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -109,16 +99,6 @@
             this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 8;
             this.label3.Text = "Estado";
-            // 
-            // cboxRelacion
-            // 
-            this.cboxRelacion.FormattingEnabled = true;
-            this.cboxRelacion.Items.AddRange(new object[] {
-            "a"});
-            this.cboxRelacion.Location = new System.Drawing.Point(28, 258);
-            this.cboxRelacion.Name = "cboxRelacion";
-            this.cboxRelacion.Size = new System.Drawing.Size(100, 21);
-            this.cboxRelacion.TabIndex = 9;
             // 
             // label4
             // 
@@ -131,16 +111,16 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cboxRelacion);
+            this.groupBox1.Controls.Add(this.cboxEstado);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtDNI);
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.cboxRelacion);
             this.groupBox1.Controls.Add(this.txtApellido);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.cboxEstado);
             this.groupBox1.Location = new System.Drawing.Point(99, 69);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(162, 322);
@@ -166,8 +146,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.cboxLenguaje);
+            this.groupBox2.Controls.Add(this.txtFechaInicio);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.txtLenguaje);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.txtDescripcion);
             this.groupBox2.Controls.Add(this.label10);
@@ -175,7 +156,6 @@
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.dtEntrega);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.dtSuscripcion);
             this.groupBox2.Controls.Add(this.txtCodPr);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
@@ -186,6 +166,31 @@
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Proyecto";
+            // 
+            // cboxLenguaje
+            // 
+            this.cboxLenguaje.FormattingEnabled = true;
+            this.cboxLenguaje.Location = new System.Drawing.Point(254, 98);
+            this.cboxLenguaje.Name = "cboxLenguaje";
+            this.cboxLenguaje.Size = new System.Drawing.Size(135, 21);
+            this.cboxLenguaje.TabIndex = 15;
+            // 
+            // txtFechaInicio
+            // 
+            this.txtFechaInicio.Location = new System.Drawing.Point(254, 151);
+            this.txtFechaInicio.Name = "txtFechaInicio";
+            this.txtFechaInicio.ReadOnly = true;
+            this.txtFechaInicio.Size = new System.Drawing.Size(135, 20);
+            this.txtFechaInicio.TabIndex = 14;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(251, 82);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(134, 13);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Lenguaje de Programacion";
             // 
             // label11
             // 
@@ -248,15 +253,6 @@
             this.label7.Text = "Fecha Suscripcion";
             this.label7.Visible = false;
             // 
-            // dtSuscripcion
-            // 
-            this.dtSuscripcion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtSuscripcion.Location = new System.Drawing.Point(254, 151);
-            this.dtSuscripcion.Name = "dtSuscripcion";
-            this.dtSuscripcion.Size = new System.Drawing.Size(135, 20);
-            this.dtSuscripcion.TabIndex = 4;
-            this.dtSuscripcion.Value = new System.DateTime(2022, 6, 30, 8, 42, 38, 0);
-            // 
             // txtCodPr
             // 
             this.txtCodPr.Location = new System.Drawing.Point(254, 45);
@@ -299,21 +295,21 @@
             this.btnConfirmar.UseVisualStyleBackColor = true;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
-            // txtLenguaje
+            // cboxEstado
             // 
-            this.txtLenguaje.Location = new System.Drawing.Point(254, 98);
-            this.txtLenguaje.Name = "txtLenguaje";
-            this.txtLenguaje.Size = new System.Drawing.Size(135, 20);
-            this.txtLenguaje.TabIndex = 12;
+            this.cboxEstado.FormattingEnabled = true;
+            this.cboxEstado.Location = new System.Drawing.Point(28, 204);
+            this.cboxEstado.Name = "cboxEstado";
+            this.cboxEstado.Size = new System.Drawing.Size(100, 21);
+            this.cboxEstado.TabIndex = 13;
             // 
-            // label12
+            // cboxRelacion
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(251, 82);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(134, 13);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "Lenguaje de Programacion";
+            this.cboxRelacion.FormattingEnabled = true;
+            this.cboxRelacion.Location = new System.Drawing.Point(28, 257);
+            this.cboxRelacion.Name = "cboxRelacion";
+            this.cboxRelacion.Size = new System.Drawing.Size(100, 21);
+            this.cboxRelacion.TabIndex = 14;
             // 
             // IfrmUsuario
             // 
@@ -339,9 +335,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cboxEstado;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cboxRelacion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -352,7 +346,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dtEntrega;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dtSuscripcion;
         private System.Windows.Forms.TextBox txtCodPr;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label11;
@@ -361,6 +354,9 @@
         private System.Windows.Forms.TextBox txtCosto;
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtLenguaje;
+        private System.Windows.Forms.TextBox txtFechaInicio;
+        private System.Windows.Forms.ComboBox cboxLenguaje;
+        private System.Windows.Forms.ComboBox cboxRelacion;
+        private System.Windows.Forms.ComboBox cboxEstado;
     }
 }

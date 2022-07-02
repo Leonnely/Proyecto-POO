@@ -33,24 +33,21 @@ namespace Proyecto_Integrador.Formularios
             //Variables del proyecto
             string nombreProyecto = txtNombreProyecto.Text;
             string cod_proy = txtCodPr.Text;
-            string fechaSuscr = dtSuscripcion.Value.ToString();
+            
+            DateTime dateTime = DateTime.Now;
+            string fechaSuscr = dateTime.ToString();
             string fechaEntr = dtEntrega.Value.ToString();
+            string descripcion = txtDescripcion.Text;
             string costo = txtCosto.Text;
-            string lang = txtLenguaje.Text;
+            string lang = cboxLenguaje.SelectedText;
 
-            ///
-            /// TODO : Validar controles
-            ///
+            
 
-            //Creacion de las clases
             Cliente cliente = new Cliente(nombre, apellido,dni, estado, relacion);
             Proyectos proyecto = new Proyectos(nombreProyecto, cod_proy, fechaSuscr, costo, fechaEntr, lang);
             cliente.Proyect = proyecto;
-            //*************************podemos acceder a una clase desde otra clase con la agregacion
-            //cliente.Proyect.Nombre = "a";
 
 
-            // Hacer un condicional donde se validen los datos y si todo es correcto se ejecute el siguiente codigo
             if (File.Exists("DatosClientes.txt"))
             {
                 FileStream fs = new FileStream("DatosClientes.txt", FileMode.Open);
@@ -102,7 +99,8 @@ namespace Proyecto_Integrador.Formularios
                     sw.WriteLine(datos1[0] + ";" + datos1[1] + ";" + datos1[2] + ";" + datos1[3] + ";" + datos1[4] + ";" + datos1[5]);
 
                 }
-                string DatosProyecto = txtNombreProyecto.Text + ";" + txtCodPr.Text + ";" + dtSuscripcion.Text + ";" + txtCosto.Text + ";" + dtEntrega.Text + ";" + txtLenguaje.Text; sw.WriteLine(DatosProyecto);
+                string DatosProyecto = txtNombreProyecto.Text + ";" + txtCodPr.Text + ";" + txtFechaInicio.Text + ";" + txtCosto.Text + ";" + dtEntrega.Text + ";" + cboxLenguaje.SelectedText; 
+                sw.WriteLine(DatosProyecto);
                 sr.Close();
                 sw.Close();
                 fs.Close();
@@ -115,7 +113,7 @@ namespace Proyecto_Integrador.Formularios
             {
                 FileStream fs = new FileStream("DatosProyectos.txt", FileMode.Append);
                 StreamWriter RW = new StreamWriter(fs);
-                string DatosProyecto = txtNombreProyecto.Text + ";" + txtCodPr.Text + ";" + dtSuscripcion.Text+ ";" + txtCosto.Text + ";" + dtEntrega.Text + ";" + txtLenguaje.Text;
+                string DatosProyecto = txtNombreProyecto.Text + ";" + txtCodPr.Text + ";" + txtFechaInicio.Text+ ";" + txtCosto.Text + ";" + dtEntrega.Text + ";" + cboxLenguaje.SelectedText;
                 RW.WriteLine(DatosProyecto);
                 RW.Close();
                 fs.Close();
@@ -124,20 +122,28 @@ namespace Proyecto_Integrador.Formularios
 
         private void IfrmUsuario_Load(object sender, EventArgs e)
         {
-            /*   rellenar datos clintes  *despues se borra*  */
-            txtNombre.Text = "Leonel";
-            txtApellido.Text = "Lescano";
-            txtDNI.Text = "43505808";
+            txtFechaInicio.Text = DateTime.Now.ToShortDateString();
+
+            string[] estado = { "Nuevo", "Frecuente"};
+            for (int i = 0; i < estado.Length; i++)
+            {
+                cboxEstado.Items.Add(estado[i]);
+            }
             cboxEstado.SelectedIndex = 0;
+
+            string[] relacion = { "Buena", "Neutral", "Mala"};
+            for (int i = 0; i < relacion.Length; i++)
+            {
+                cboxRelacion.Items.Add(relacion[i]);
+            }
             cboxRelacion.SelectedIndex = 0;
 
-            /*   rellenar datos   *despues se borra*  */
-            txtNombreProyecto.Text = "Asignacion proyectos";
-            txtCodPr.Text = "01";
-            dtSuscripcion.Value = DateTime.Now;
-            dtEntrega.Value = DateTime.Now;
-            txtCosto.Text = "500";
-            txtLenguaje.Text = "c#";
+            string[] lenguaje = {"Python","Flutter","C","C++","C#","F#","Java","JavaScript"};
+            for (int i = 0; i < lenguaje.Length; i++) 
+            { 
+                cboxLenguaje.Items.Add(lenguaje[i]);
+            } 
+            cboxLenguaje.SelectedIndex = 4;
         }
     }
 }

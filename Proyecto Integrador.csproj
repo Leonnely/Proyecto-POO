@@ -38,6 +38,7 @@
       <HintPath>packages\FileHelpers.3.5.1\lib\net45\FileHelpers.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -55,12 +56,6 @@
     <Compile Include="Clases\Persona.cs" />
     <Compile Include="Clases\Proyectos.cs" />
     <Compile Include="Clases\zDatos.cs" />
-    <Compile Include="Formularios\IfrmAcercaDe.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Formularios\IfrmAcercaDe.Designer.cs">
-      <DependentUpon>IfrmAcercaDe.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\IfrmEmpleados.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -72,6 +67,12 @@
     </Compile>
     <Compile Include="Formularios\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IfrmMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\IfrmMain.Designer.cs">
+      <DependentUpon>IfrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\IfrmProyectos.cs">
       <SubType>UserControl</SubType>
@@ -87,14 +88,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\IfrmAcercaDe.resx">
-      <DependentUpon>IfrmAcercaDe.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\IfrmEmpleados.resx">
       <DependentUpon>IfrmEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IfrmMain.resx">
+      <DependentUpon>IfrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\IfrmProyectos.resx">
       <DependentUpon>IfrmProyectos.cs</DependentUpon>
