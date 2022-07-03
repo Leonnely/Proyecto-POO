@@ -34,7 +34,7 @@ namespace Proyecto_Integrador.Formularios
                 {
                     string line = SR.ReadLine();
                     string[] values = line.Split(';');
-                    EmpGral empleado = new EmpGral(values[0], values[1], values[2]);
+                    EmpGral empleado = new EmpGral(values[0], values[1], values[2],values[3]);
                     zDatos.Empleados.AddLast(empleado);
                 }
                 SR.Close();
@@ -57,8 +57,8 @@ namespace Proyecto_Integrador.Formularios
             string codeEmp = txtCodEmp.Text;
             string nombre = txtNombre.Text;
             string apellido = txtApellido.Text;
-
-            EmpGral empleado = new EmpGral(codeEmp, nombre, apellido);
+            string cargo = "Cargo"; // modificar luego
+            EmpGral empleado = new EmpGral(codeEmp, nombre, apellido,cargo);
             //zDatos.Empleados.AddLast(empleado);
 
 
@@ -111,6 +111,33 @@ namespace Proyecto_Integrador.Formularios
                 CargarEmpleados();
                 //dataGridView1.DataSource = zDatos.getEmpleados();
             }
+        }
+
+        private void txtCodEmpAsignar_TextChanged(object sender, EventArgs e)
+        {
+            // UTILIZAR LISTAS
+            MessageBox.Show("Test");
+            
+                FileStream FS = new FileStream("RegistroEmpleados.txt", FileMode.Open);
+                StreamReader SR = new StreamReader(FS);
+
+                string line;
+                while (!SR.EndOfStream)
+                {
+                    line = SR.ReadLine();
+                    string[] value = line.Split(';');
+                    if (txtCodEmpAsignar.Text == value[0]  )
+                    {
+                        MessageBox.Show("Test");
+                        listView2.Items.Add(value[1]);
+                        listView2.Items.Add(value[2]);
+                    }
+                    
+                }
+                //txtCodPr.Text = "0" + contador.ToString();
+                SR.Close();
+                FS.Close();
+            
         }
     }
 }

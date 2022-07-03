@@ -43,7 +43,7 @@ namespace Proyecto_Integrador.Formularios
                     
                     int n = dataGridView1.Rows.Add();  
                     
-                    dataGridView1.Rows[n].Cells[0].Value = "Asignar Proyecto";
+                    //dataGridView1.Rows[n].Cells[0].Value = "Asignar Proyecto";
                     dataGridView1.Rows[n].Cells[1].Value = client.DNI;
                     dataGridView1.Rows[n].Cells[2].Value = client.Nombre + " " + client.Apellido;
                     dataGridView1.Rows[n].Cells[3].Value = client.Proyect.CodeProyect;

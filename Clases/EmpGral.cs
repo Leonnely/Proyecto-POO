@@ -8,15 +8,12 @@ namespace Proyecto_Integrador.Clases
 {
     class EmpGral : Persona
     {
-        /// <summary>
-        /// CONSTRUCTOR PARA FUNCIONAMIENTO DE PRUEBA
-        /// **** ESTADO INCOMPLETO ****
-        /// </summary>
-        public EmpGral(string Nombre, string Apellido,string CodEmp) :base(Nombre,Apellido)
+        public EmpGral(string CodEmp,string Nombre, string Apellido,string Cargo) :base(Nombre,Apellido)
         {
             this.CodEmp = CodEmp;
             this.Nombre = Nombre;
             this.Apellido = Apellido;
+            this.Cargo = Cargo;
         }
 
         private string codemp;
@@ -31,6 +28,20 @@ namespace Proyecto_Integrador.Clases
         {
             get { return cargo; }
             set { cargo = value; }
+        }
+
+        private Proyectos[] proyectos;
+        public Proyectos[] Proyectos
+        {
+            get { return proyectos; }
+            set { proyectos = value; }
+        }
+
+        private EmpGral equipo;
+        public EmpGral Equipos
+        {
+            get { return equipo; }
+            set { equipo = value; }
         }
 
 

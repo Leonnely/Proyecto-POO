@@ -46,7 +46,7 @@ namespace Proyecto_Integrador
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(972, 41);
+            this.panel1.Size = new System.Drawing.Size(1058, 41);
             this.panel1.TabIndex = 3;
             // 
             // panel4
@@ -60,7 +60,7 @@ namespace Proyecto_Integrador
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 41);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(150, 563);
+            this.panel4.Size = new System.Drawing.Size(150, 551);
             this.panel4.TabIndex = 4;
             // 
             // btnSalir
@@ -74,7 +74,7 @@ namespace Proyecto_Integrador
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("HoloLens MDL2 Assets", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(0, 493);
+            this.btnSalir.Location = new System.Drawing.Point(0, 481);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(150, 70);
             this.btnSalir.TabIndex = 4;
@@ -169,14 +169,14 @@ namespace Proyecto_Integrador
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(150, 41);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(822, 563);
+            this.panelContenedor.Size = new System.Drawing.Size(908, 551);
             this.panelContenedor.TabIndex = 5;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 604);
+            this.ClientSize = new System.Drawing.Size(1058, 592);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);

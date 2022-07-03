@@ -122,6 +122,33 @@ namespace Proyecto_Integrador.Formularios
 
         private void IfrmUsuario_Load(object sender, EventArgs e)
         {
+            try
+            {
+                FileStream FS = new FileStream("DatosProyectos.txt", FileMode.Open);
+                StreamReader SR = new StreamReader(FS);
+            
+                int contador = 0;
+                while (!SR.EndOfStream)
+                {
+                    SR.ReadLine();
+                    if (SR.EndOfStream == false)
+                    {
+                        contador++;
+                    }
+                }
+                contador += 2;
+                txtCodPr.Text = "0" + contador.ToString();
+                SR.Close();
+                FS.Close();
+            }
+            catch (Exception)
+            {
+                txtCodPr.Text = "01";
+            }
+            
+
+            //contador += 1;
+
             txtFechaInicio.Text = DateTime.Now.ToShortDateString();
 
             string[] estado = { "Nuevo", "Frecuente"};

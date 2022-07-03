@@ -35,6 +35,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cboxRelacion = new System.Windows.Forms.ComboBox();
+            this.cboxEstado = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtDNI = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -53,8 +55,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtNombreProyecto = new System.Windows.Forms.TextBox();
             this.btnConfirmar = new System.Windows.Forms.Button();
-            this.cboxEstado = new System.Windows.Forms.ComboBox();
-            this.cboxRelacion = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -127,6 +127,22 @@
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cliente";
+            // 
+            // cboxRelacion
+            // 
+            this.cboxRelacion.FormattingEnabled = true;
+            this.cboxRelacion.Location = new System.Drawing.Point(28, 257);
+            this.cboxRelacion.Name = "cboxRelacion";
+            this.cboxRelacion.Size = new System.Drawing.Size(100, 21);
+            this.cboxRelacion.TabIndex = 14;
+            // 
+            // cboxEstado
+            // 
+            this.cboxEstado.FormattingEnabled = true;
+            this.cboxEstado.Location = new System.Drawing.Point(28, 204);
+            this.cboxEstado.Name = "cboxEstado";
+            this.cboxEstado.Size = new System.Drawing.Size(100, 21);
+            this.cboxEstado.TabIndex = 13;
             // 
             // label9
             // 
@@ -257,6 +273,7 @@
             // 
             this.txtCodPr.Location = new System.Drawing.Point(254, 45);
             this.txtCodPr.Name = "txtCodPr";
+            this.txtCodPr.ReadOnly = true;
             this.txtCodPr.Size = new System.Drawing.Size(135, 20);
             this.txtCodPr.TabIndex = 3;
             // 
@@ -294,22 +311,6 @@
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
-            // 
-            // cboxEstado
-            // 
-            this.cboxEstado.FormattingEnabled = true;
-            this.cboxEstado.Location = new System.Drawing.Point(28, 204);
-            this.cboxEstado.Name = "cboxEstado";
-            this.cboxEstado.Size = new System.Drawing.Size(100, 21);
-            this.cboxEstado.TabIndex = 13;
-            // 
-            // cboxRelacion
-            // 
-            this.cboxRelacion.FormattingEnabled = true;
-            this.cboxRelacion.Location = new System.Drawing.Point(28, 257);
-            this.cboxRelacion.Name = "cboxRelacion";
-            this.cboxRelacion.Size = new System.Drawing.Size(100, 21);
-            this.cboxRelacion.TabIndex = 14;
             // 
             // IfrmUsuario
             // 
