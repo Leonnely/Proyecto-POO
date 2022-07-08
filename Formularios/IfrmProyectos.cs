@@ -40,7 +40,8 @@ namespace Proyecto_Integrador.Formularios
                     string lineProyecto = SR.ReadLine();
                     string[] valuesProyecto = lineProyecto.Split(';');
                     client.Proyect = new Proyectos(valuesProyecto[0], valuesProyecto[1], valuesProyecto[2], valuesProyecto[3], valuesProyecto[4], valuesProyecto[5]);
-                    
+
+
                     int n = dataGridView1.Rows.Add();  
                     
                     //dataGridView1.Rows[n].Cells[0].Value = "Asignar Proyecto";
@@ -48,7 +49,7 @@ namespace Proyecto_Integrador.Formularios
                     dataGridView1.Rows[n].Cells[2].Value = client.Nombre + " " + client.Apellido;
                     dataGridView1.Rows[n].Cells[3].Value = client.Proyect.CodeProyect;
                     dataGridView1.Rows[n].Cells[4].Value = client.Proyect.Nombre;
-
+                    
                     dataGridView1.Rows[n].Cells[5].Value = client.Proyect.FechaSuscripcion;
                     dataGridView1.Rows[n].Cells[6].Value = client.Proyect.FechaEntrega;
                     dataGridView1.Rows[n].Cells[7].Value = client.Proyect.Costo;

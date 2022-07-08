@@ -29,7 +29,6 @@ namespace Proyecto_Integrador.Formularios
                 FileStream FS = new FileStream("RegistroEmpleados.txt",FileMode.Open);
                 StreamReader SR = new StreamReader(FS);
                 
-                //zDatos.Empleados.Clear();
                 while (!SR.EndOfStream)
                 {
                     string line = SR.ReadLine();
@@ -37,7 +36,6 @@ namespace Proyecto_Integrador.Formularios
                     EmpGral empleado = new EmpGral(values[0], values[1], values[2],values[3]);
 
                     int n = dataGridView1.Rows.Add();
-                    //zDatos.Empleados.AddLast(empleado);
                     dataGridView1.Rows[n].Cells[0].Value = empleado.CodEmp;
                     dataGridView1.Rows[n].Cells[1].Value = empleado.Nombre;
                     dataGridView1.Rows[n].Cells[2].Value = empleado.Apellido;
@@ -45,7 +43,6 @@ namespace Proyecto_Integrador.Formularios
                 }
                 SR.Close();
                 FS.Close();
-                //dataGridView1.DataSource = zDatos.getEmpleados();
             }
             catch (Exception )
             {
@@ -145,7 +142,5 @@ namespace Proyecto_Integrador.Formularios
                 FS.Close();
             
         }
-
-        
     }
 }
